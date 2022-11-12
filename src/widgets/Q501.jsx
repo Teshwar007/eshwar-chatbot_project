@@ -4,25 +4,25 @@ import Button from "@material-ui/core/Button";
 //defination  of Question1 widget
 //all the mathod define in actionprovider and all states of widget are passed in props
 //you can use all fuunction and state with the help of props
-const Q201 = (props) => {
+const Q501 = (props) => {
   return (
     <>
       <ul>
         <li>
-          <Button style={{ background: 'yellow' }} onClick={props.actionProvider.Q3o1}> <img src="https://cdn-icons-png.flaticon.com/128/8831/8831750.png"
+          <Button style={{ background: 'yellow' }} onClick={props.actionProvider.Q601}> <img src="https://cdn-icons-png.flaticon.com/128/642/642000.png"
           />
-            1) CLean greens on silver platter 
+            1) "Wrapping up for winter!" 
           </Button>
         </li>
         <p></p>
         <li>
-          <Button style={{ background: 'yellow' }} onClick={props.actionProvider.Q3o1}> <img src="https://cdn-icons-png.flaticon.com/128/1923/1923515.png"
+          <Button style={{ background: 'yellow' }} onClick={props.actionProvider.Q601}> <img src="https://cdn-icons-png.flaticon.com/128/2917/2917242.png"
           />
-            2) Messy takeout in a foil tray
+            2) "Throwing it all of in the summer!"
           </Button>
         </li>
       </ul>
     </>
   );
 };
-export default Q201;
+export default Q501;

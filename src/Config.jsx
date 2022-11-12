@@ -6,6 +6,11 @@ import Tools from "./widgets/Tools";
 import WeatherInfo from "./widgets/WeatherInfo";
 import Options from "./widgets/Options/Options";
 import Q1 from "./widgets/Q1";
+import Q2o1 from "./widgets/Q2o1";
+import Q301 from "./widgets/Q301";
+import Q401 from "./widgets/Q401";
+import Q501 from "./widgets/Q501";
+import Q601 from "./widgets/Q601";
 import React from "react";
 
 const botName = "Eshwar Prasad";
@@ -89,6 +94,31 @@ const config = {
       widgetName: "Q1",
       widgetFunc: (props) => <Q1 {...props} />,
       mapStateToProps: ["Q2o1"],
+    },
+    {
+      widgetName: "Q2o1",
+      widgetFunc: (props) => <Q2o1 {...props} />,
+      mapStateToProps: ["Q3"],
+    },
+    {
+      widgetName: "Q3o1",
+      widgetFunc: (props) => <Q301 {...props} />,
+      mapStateToProps: ["Q4"],
+    },
+    {
+      widgetName: "Q4o1",
+      widgetFunc: (props) => <Q401 {...props} />,
+      mapStateToProps: ["Q5"],
+    },
+    {
+      widgetName: "Q501",
+      widgetFunc: (props) => <Q501 {...props} />,
+      mapStateToProps: ["Q6"],
+    },
+    {
+      widgetName: "Q601",
+      widgetFunc: (props) => <Q601 {...props} />,
+      mapStateToProps: ["Q7"],
     },
   ],
 };

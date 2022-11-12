@@ -51,17 +51,51 @@ class ActionProvider {
     this.addMessageToBotState(message);
   };
 
-  //for enrollment no widget , use of form and submission of event
-  EnrollmentNumber = () => {
-    const message = this.createChatBotMessage(
-      `enter your information for generate enrollment no.`,
-      {
-        withAvatar: true,
-        widget: "EnrollmentNo",
-      }
-    );
+  Q2o1 = () => {
+    const message = this.createChatBotMessage("whats for dinner tonight?", {
+      loading: true,
+      withAvatar: true,
+      widget: "Q2o1",
+    });
     this.addMessageToBotState(message);
   };
+
+  Q3o1 = () => {
+    const message = this.createChatBotMessage("How do you like to relax at home?", {
+      loading: true,
+      withAvatar: true,
+      widget: "Q3o1",
+    });
+    this.addMessageToBotState(message);
+  };
+
+  Q4o1 = () => {
+    const message = this.createChatBotMessage("What is your motto in Life?", {
+      loading: true,
+      withAvatar: true,
+      widget: "Q4o1",
+    });
+    this.addMessageToBotState(message);
+  };
+
+  Q501 = () => {
+    const message = this.createChatBotMessage("What is your motto in Life?", {
+      loading: true,
+      withAvatar: true,
+      widget: "Q501",
+    });
+    this.addMessageToBotState(message);
+  };
+  Q601 = () => {
+    const message = this.createChatBotMessage("Sounds like you are a yerri puku listener", {
+      loading: true,
+      delay: 200,
+      withAvatar: true,
+      widget: "Q601",
+    });
+    this.addMessageToBotState(message);
+  };
+
 
   //display list using help of states array
   WebHandler = () => {
