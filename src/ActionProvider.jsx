@@ -79,7 +79,7 @@ class ActionProvider {
   };
 
   Q501 = () => {
-    const message = this.createChatBotMessage("What is your motto in Life?", {
+    const message = this.createChatBotMessage("What do you most identify with?", {
       loading: true,
       withAvatar: true,
       widget: "Q501",
