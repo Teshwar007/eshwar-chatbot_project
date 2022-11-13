@@ -5,6 +5,7 @@ import Q301 from "./widgets/Q301";
 import Q401 from "./widgets/Q401";
 import Q501 from "./widgets/Q501";
 import Q601 from "./widgets/Q601";
+import Q7 from "./widgets/Q7";
 import React from "react";
 
 const botName = "Eshwar Prasad";
@@ -66,6 +67,11 @@ const config = {
     {
       widgetName: "Q601",
       widgetFunc: (props) => <Q601 {...props} />,
+      mapStateToProps: ["Q7"],
+    },
+    {
+      widgetName: "Q7",
+      widgetFunc: (props) => <Q7 {...props} />,
       mapStateToProps: ["Q7"],
     },
   ],

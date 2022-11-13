@@ -36,7 +36,7 @@ function App() {
                       Music Chat bot by {" "}
                       <span style={{ color: "gold", fontFamily: "cursive", alignContent: "center" }}>Eshwar Prasad</span>
                   </h1>
-                  <div><button className="glow-on-hover" onClick={() => toggleBot((prev) => !prev)}>Music Bot</button></div>
+                  <div><button className="glow-on-hover" onClick={ () => {toggleBot((prev) => !prev) ; console.log("Toggle")}}>Music Bot</button></div>
                 
         </div>
               <div ref={ menuRef} className="App mx-auto col-md-6 col-sm-8 col-lg-4 cpl-xl-3 my-5">

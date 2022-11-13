@@ -27,32 +27,9 @@ class ActionProvider {
     this.addMessageToBotState(message);
   };
 
-  //use tools widget, return button and action doing
-  Tools = () => {
-    const message = this.createChatBotMessage(
-      `we provides this much features`,
-      {
-        withAvatar: true,
-        widget: "Tools",
-      }
-    );
-    this.addMessageToBotState(message);
-  };
-
-  //for weather widget, API testing and fetch data return current weather info of city using API
-  WeatherInfoHandle = () => {
-    const message = this.createChatBotMessage(
-      `enter your city name to know weather if your city`,
-      {
-        withAvatar: true,
-        widget: "WeatherInfo",
-      }
-    );
-    this.addMessageToBotState(message);
-  };
-
   Q2o1 = () => {
     const message = this.createChatBotMessage("whats for dinner tonight?", {
+   
       loading: true,
       withAvatar: true,
       widget: "Q2o1",
@@ -87,7 +64,7 @@ class ActionProvider {
     this.addMessageToBotState(message);
   };
   Q601 = () => {
-    const message = this.createChatBotMessage("Sounds like you are a yerri puku listener", {
+    const message = this.createChatBotMessage("Sounds like you are a boring listner", {
       loading: true,
       delay: 200,
       withAvatar: true,
@@ -95,25 +72,14 @@ class ActionProvider {
     });
     this.addMessageToBotState(message);
   };
-
-
-  //display list using help of states array
-  WebHandler = () => {
-    const messages = this.createChatBotMessage(`cources for web development:`, {
+    Q7 = () => {
+    const message = this.createChatBotMessage("Here  you go", {
+      loading: true,
+      delay: 200,
       withAvatar: true,
-      widget: "WebDevelopment",
+      widget: "Q7",
     });
-
-    this.addMessageToBotState(messages);
-  };
-
-  // display list using help of data array provided in widget
-  SoftwareHandler = () => {
-    const messages = this.createChatBotMessage(
-      `cources for software development:`,
-      { withAvatar: true, widget: "SoftwareDevelopment" }
-    );
-    this.addMessageToBotState(messages);
+    this.addMessageToBotState(message);
   };
 
   //default handler if you not found any mathes
@@ -122,18 +88,6 @@ class ActionProvider {
       withAvatar: true,
       widget: "Q1",
     });
-    this.addMessageToBotState(message);
-  };
-  handleContactInfo = () => {
-    const message = this.createChatBotMessage(
-      "If you need to speak to a real person, you can call 67 03 00 00.",
-      {
-        loading: true,
-        terminateLoading: true,
-        withAvatar: true,
-      }
-    );
-
     this.addMessageToBotState(message);
   };
 }
