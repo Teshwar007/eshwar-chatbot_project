@@ -6,8 +6,7 @@ import { useState } from "react";
 //all the mathod define in actionprovider and all states of widget are passed in props
 //you can use all fuunction and state with the help of props
 const Q7 = (props) => {
-    const mood = [localStorage.getItem("motto"), localStorage.getItem("Relax"), localStorage.getItem("identify"), localStorage.getItem("morning"), localStorage.getItem("dinner")];
-    console.log(mood)
+    
   return (
     <>
       <ul>

@@ -29,6 +29,33 @@ const Q601 = (props) => {
     
     async function search() {
       console.log("search for"); 
+      const mood = [localStorage.getItem("motto"), localStorage.getItem("Relax"), localStorage.getItem("identify"), localStorage.getItem("morning"), localStorage.getItem("dinner")];
+      const rock = ['day', 'Song', 'winter', 'gym', 'greens']
+      var vibe = "";
+      console.log(mood.includes("day") && mood.includes("Song") )
+      if (mood.includes("day") && mood.includes("Song") ) {
+        var vibe = "rock"
+      }
+      else if (mood.includes("snooze") && mood.includes("messy") && mood.includes("Song") && mood.includes("rose") && mood.includes("summer")) {
+        var vibe = "focus"
+      }
+      if (mood.includes("gym") && mood.includes("greens") && mood.includes("Song") && mood.includes("day") && mood.includes("summer")) {
+        var vibe = "lo-fi"
+      }
+      if (mood.includes("snooze") && mood.includes("messy") && mood.includes("Song") && mood.includes("day") && mood.includes("summer")) {
+        var vibe = "party"
+      }
+      if (mood.includes("snooze") && mood.includes("messy") && mood.includes("Song") && mood.includes("rose") && mood.includes("winter")) {
+        var vibe = "Rap"
+      }
+      if (mood.includes("gym") && mood.includes("messy") && mood.includes("Song") && mood.includes("rose") && mood.includes("winter")) {
+        var vibe = "Rap"
+      }
+      else {
+        var vibe = "latest"
+      }
+      console.log(vibe)
+
       ///Get tracks based on the query
         var trackParameters = {
             method: 'GET',
@@ -37,7 +64,7 @@ const Q601 = (props) => {
             'Authorization': 'Bearer ' + accessToken
             }
         };
-        var trackID = await fetch('https://api.spotify.com/v1/search?q=party&type=track', trackParameters)
+        var trackID = await fetch('https://api.spotify.com/v1/search?q=' + vibe +'&type=track', trackParameters)
           .then(response => response.json())
           .then(data => {return data.tracks.items[getRandomInt(15)].id})
           console.log('trackis is',trackID)
