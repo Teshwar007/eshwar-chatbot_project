@@ -64,7 +64,7 @@ class ActionProvider {
     this.addMessageToBotState(message);
   };
   Q601 = () => {
-    const message = this.createChatBotMessage("Sounds like you are a boring listner", {
+    const message = this.createChatBotMessage("OK click the play button to listen", {
       loading: true,
       delay: 200,
       withAvatar: true,
